@@ -8,7 +8,6 @@ class Item:
         print(f"Author: {self.author}")
 
 
-# Child class: Book
 class Book(Item):
     def __init__(self, title, author, pages):
         super().__init__(title, author)
@@ -17,8 +16,6 @@ class Book(Item):
     def additional_info(self):
         print(f"Pages: {self.pages}")
 
-
-# Child class: Magazine
 class Magazine(Item):
     def __init__(self, title, author, issue_number):
         super().__init__(title, author)
